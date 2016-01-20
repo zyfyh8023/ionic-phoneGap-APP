@@ -1,0 +1,24 @@
+<ion-view view-title="联系我们">
+  <ion-content class="padding">
+	<p>
+		<a class="button icon icon-right ion-chevron-right" href="#/join">去加入我们</a>
+	</p>
+    <p>
+      on-hold：长按的时间是500毫秒。<br>
+      on-tap：这个是手势轻击事件，如果长按时间超过250毫秒，那就不是轻击了。。 <br>
+      on-double-tap：手双击屏幕事件 <br>
+      on-touch：这个和 on-tap 还是有区别的，这个是立即执行，而且是用户点击立马执行。不用等待 touchend/mouseup 。 <br>
+      on-release：当用户结束触摸事件时触发。 <br>
+      on-drag：这个有点类似于PC端的拖拽。当你一直点击某个物体，并且手开始移动，都会触发 on-drag。<br>
+      on-swipe：指手指滑动效果，可以是任何方向上的。而且也和 on-drag 类似，都有四个方向上单独的事件。
+    </p><br>
+    <div>
+        <button on-drag-down="onDragDown()" class="button">onDragDown</button>&nbsp;&nbsp;&nbsp;
+        <button on-drag-right="onDragRight()" class="button">onDragRight</button><br><br><br><br>
+		<button on-swipe-up="onSwipeUp()" class="button">onSwipeUp</button>&nbsp;&nbsp;&nbsp;
+		<button onSwipeUp="onSwipeLeft()" class="button">onSwipeLeft</button>
+    </dvi>
+  </ion-content>
+</ion-view>
+
+

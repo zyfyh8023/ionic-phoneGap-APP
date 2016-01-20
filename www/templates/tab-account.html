@@ -1,0 +1,25 @@
+<ion-view view-title="我的系统设置">
+	<ion-nav-buttons side="left">
+	    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+	</ion-nav-buttons>
+	
+	<ion-content>
+	    <ion-list>
+		    <ion-toggle  ng-model="settings.info">
+		        资讯推送
+		    </ion-toggle>
+		    <ion-toggle  ng-model="settings.mess">
+		        消息提醒推送
+		    </ion-toggle>
+		    <ion-toggle  ng-model="settings.friends">
+		        圈子推送
+		    </ion-toggle>
+		    <ion-toggle  ng-model="settings.music">
+		        消息提醒铃声
+		    </ion-toggle>
+		    <ion-toggle  ng-model="settings.vers">
+		        版本自动更新
+		    </ion-toggle>
+	    </ion-list>
+	</ion-content>
+</ion-view>
